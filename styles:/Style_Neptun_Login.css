@@ -1,0 +1,1547 @@
+﻿@import url("Custom/Hallgato/Style_Neptun_Login_Custom.css");
+@import url("Custom/Oktato/Style_Neptun_Login_Custom.css");
+
+/* modal popup elemei */
+.modalpanel_detail
+{
+    /*background-color:#E7F4FC;*/
+    border-width: 0px;
+    /*border-style: solid;
+    border-color: Black;*//*#C0C0C0;*/
+    padding: 0px;
+    width: 600px; 
+    margin-bottom: 10px;
+}
+.modalpanel_nowidth 
+{
+    background-color:#E7F4FC;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #C0C0C0;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.modalpanel_header
+{
+       width:100%;
+       height:20px;
+       background-color:transparent;
+       cursor:move;
+}
+
+/*.modalpanel_header
+{
+	width:100%;
+	height:20px;
+	background-color:#017DC7;
+	cursor:move;
+}*/
+
+.modalpanel_header_caption
+{
+    width:100%;
+    vertical-align:middle;
+    text-align:left;
+    color:#525659;
+    font-weight:bold;
+    font-size:14px;
+    background-color:transparent;
+}
+/*.modalpanel_header_caption
+{
+    width:100%;
+    vertical-align:middle;
+    text-align:left;
+    color:#FFFFFF;
+    font-weight:bold;
+    font-size:14px;
+}*/
+
+.modalpanel_header_closeimage
+{
+    text-align:right;
+    cursor:pointer;
+}
+
+
+.modalpanel
+{
+       background-color:transparent;
+       border-collapse:collapse;
+       border:0px;
+       padding:0px; 
+       margin:0px;  
+       width:600px
+}
+/*.modalpanel
+{
+    background-color:#E7F4FC;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Black; /*#C0C0C0;*/
+    /*padding: 0px;
+    width: 600px;
+    margin-bottom: 10px;
+}*/
+
+
+.modaltable
+{
+       width: 100%;
+       height: 100%;
+       border:0px;
+       padding:0px; 
+       margin:0px;  
+       border-collapse:collapse;
+       background-color: transparent;    
+}
+
+.modalheaderleftcorner
+{
+    background-color: transparent;
+    background-image: url(../New_Common_Images/popup_top_left.png);
+    background-repeat: no-repeat;
+       width: 12px;
+       height: 37px;
+    border: 0px;
+       padding:0px;
+       margin:0px;
+}
+
+.modalheadercell
+{
+    background-color: transparent;
+    background-image: url(../New_Common_Images/popup_top_center.png);
+    background-repeat: repeat-x;
+       height: 37px;
+    border: 0px;
+       padding:0px;
+       margin:0px;
+}
+
+.modalheaderrightcorner
+{
+    background-color: transparent;
+    background-image: url(../New_Common_Images/popup_top_right.png);
+    background-repeat: no-repeat;
+       width: 14px;
+       height: 37px;
+    border: 0px;
+       padding:0px;
+       margin:0px;
+}
+
+.modalbodyleft
+{
+    background-color: transparent;
+    background-image: url(../New_Common_Images/popup_middle_left.png);
+    background-repeat: repeat-y;
+       width: 12px;
+    border: 0px;
+       padding:0px;
+       margin:0px;
+}
+
+.modalbody
+{
+       border:0px;
+       padding:0px; 
+       margin:0px;  
+       border-collapse:collapse;
+       background-color: #ffffff; 
+}
+
+.modalbodyright
+{
+    background-color: transparent;
+    background-image: url(../New_Common_Images/popup_middle_right.png);
+    background-repeat: repeat-y;
+       width: 14px;
+    border: 0px;
+       padding:0px;
+       margin:0px;
+}
+
+.modalfooterleftcorner
+{
+    background-color: transparent;
+    background-image: url(../New_Common_Images/popup_bottom_left.png);
+    background-repeat: no-repeat;
+       width: 12px;
+       height: 40px;
+    border: 0px;
+       padding:0px;
+       margin:0px;
+}
+
+.modalfooterrightcorner
+{
+    background-color: transparent;
+       width: 14px;
+       height: 40px;
+    border: 0px;
+       padding:0px;
+       margin:0px;
+}
+
+.modalfooter
+{
+    background-color: transparent;
+    background-image: url(../New_Common_Images/popup_bottom_center.png);
+    background-repeat: repeat-x;
+       height: 40px;
+    border: 0px;
+       padding:0px;
+       margin:0px;
+}
+
+.modalfooterrightcorner
+{
+    background-color: transparent;
+       width: 14px;
+       height: 40px;
+    border: 0px;
+       padding:0px;
+       margin:0px;
+}
+
+
+.handleFullScreen
+{
+    background-color: transparent;
+    background-image: url(../New_Common_Images/popup_bottom_right.png);
+    background-repeat: no-repeat;
+       width: 40px;
+       height: 40px;
+    border: 0px;
+       padding:0px;
+       margin:0px;
+       overflow:hidden;
+       cursor:se-resize;
+}
+
+.modalpanel_header_close
+{
+       text-align:right;
+       cursor:pointer;
+}
+.modalpanel_header_close :hover
+{
+       cursor:default;
+       filter:alpha(opacity=50);
+       opacity:0.5;
+}
+
+.modalpanel_header_fullscreenimage /*, input*/
+{
+	cursor:pointer;
+}
+
+.modalpanelcontent_withoutscrollbar
+{
+    /*padding: 5px;*/
+    background-color: #E7F4FC;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #C0C0C0;
+       width: 100%;/*770px;*/
+    height: 100%; /*410px;*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.modalpanelcontent_noscrollbar_noheight
+{
+    background-color: #ffffff;    
+    border: 0px;
+    /*width: 100%;
+    height: 100%;*/
+    width: 590px;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.modalpanelcontent
+{
+    /*padding: 5px 15px 5px 5px;*/
+    background-color: #E7F4FC;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #C0C0C0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.modalpanelcontent_tab_330
+{
+       overflow-y: hidden;
+       overflow-x: hidden;
+       height:330px;
+}
+
+.modalfooterrightcorner, .modalfooterrightcorner_NoResize
+{
+    background-color: transparent;
+       width: 14px;
+       height: 40px;
+    border: 0px;
+       padding:0px;
+       margin:0px;
+}
+
+.modalfooterrightcorner_NoResize
+{
+	background-image: url(../New_Common_Images/popup_footer_right.png);
+}
+/* modal popup elemei  vége */
+
+body 
+{
+	font-family: Verdana;
+	font-size: 11px;
+	margin: 0px; 
+	padding: 0px; 	
+	border: 0px;
+}
+
+.no_style
+{
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px; 
+	border: 0px; 
+	text-align: center;          
+}
+
+.no_style_left
+{
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px; 
+	border: 0px; 
+	text-align: left;
+	vertical-align: top;          
+}
+
+.login_left_side
+{
+    width: 300px;
+    vertical-align:top;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px; 
+	border: 0px;           
+}
+
+.login_line
+{
+    width: 300px;
+    height: 8px;
+    background-image: url(../Login_Images/login_line.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+	border: 0px;          
+}
+
+.login_center
+{
+    width: 98%;
+    text-align: center;
+    
+    /*align-items:center;
+    align-content:center;*/
+
+    border-collapse: collapse;    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px; 
+	border: 0px;     
+    height:293px;  
+}  
+
+.table_center
+{
+    border-collapse: collapse;
+    margin-left: auto;    
+    margin-right: auto;
+    padding: 0px; 
+	border: 0px;    
+}
+
+.info_table_center_container_td
+{
+    vertical-align:top;
+}
+
+#info_table_center_container_div
+{
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.info_table_center
+{
+    border-collapse: collapse;
+    /*margin-left:20px;*/
+    /*margin-right:20px;*/
+    /*margin:auto;*/
+    /*padding: 0px;*/ 	
+    width:100%;
+}
+
+.table_left
+{
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px; 
+	border: 0px;
+	width: 100%;	
+	vertical-align: top;     
+}
+
+.table_left_docs
+{
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px; 
+	border: 0px;
+	width: 100%;	
+	vertical-align: top;     
+}
+
+.validator
+{
+	color:Red;
+	right:5px;
+	font-size:10px;	
+	text-align:left;
+}
+
+.button
+{
+    background-image:url('../Skin_Neptun_Gfx/button_normal_right.png');
+    background-position:right top;
+    background-repeat:no-repeat;
+    display: block;
+    font: bold 11px Verdana; /* Change 13px as desired */
+    margin:0px;
+    border:0px;
+    color: #ffffff;
+    height:24px;
+    /*padding: 4px 6px 4px 0; /*Set 11px below to match value of 'padding-left' value above*/
+    padding:0px;
+    overflow: hidden;
+    background-color:transparent;
+    cursor: pointer;
+    padding-right:15px;
+    padding-left:9px;
+    margin-right:5px;
+    
+
+}
+
+.btnRoundedSpan
+{
+    background-image:url('../Skin_Neptun_Gfx/button_normal_left.png');
+    background-repeat:no-repeat;               
+    display: block;
+    float: left;
+    color: #ffffff;
+    font: bold 13px Verdana; /* Change 13px as desired */
+    line-height: 16px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+    height: 24px; /* Height of button background height */
+    padding-left: 6px; /* Width of left menu image */
+    text-decoration: none;
+    margin:0px;
+    border:0px;
+    cursor:default;
+    overflow: hidden;           
+    padding-left:4px;
+}
+
+.login_info_text
+{
+    height: 20px;	
+	text-align:center;
+	font-size:10px;
+	color:#525659;
+	font-family:Verdana;   
+}
+
+.login_info_version
+{
+    padding-bottom:5px;
+	width: 175px;	
+	margin-left:10px;
+	font-family:Tahoma;
+}
+
+.freeplaces
+{
+    text-align:right;
+	font-size:10px;
+	color:#525659;
+	font-family:Verdana; 
+}
+.login_label 
+{
+	height:25px;
+	font-size: 12px;
+	color:#525659;
+	font-weight: bold;
+	font-family:Verdana;   
+	text-align:right;
+	padding-right:12px;	
+	width:134px;
+}
+
+.login_input
+{
+	height:25px;
+	width: 175px;	
+	margin-left:10px;
+	font-family:Tahoma;
+}
+
+.login_input_zaszlok
+{
+    text-align:left;
+    padding-left:5px;
+}
+ 
+.login_input_zaszlok input#btnLang_0{padding-right:1px;}
+.login_input_zaszlok input#btnLang_1{padding-right:1px;padding-left:3px;}
+.login_input_zaszlok input#btnLang_2{padding-right:1px;padding-left:3px;}
+.login_input_zaszlok input#btnLang_3{padding-right:1px;padding-left:3px;}
+.login_input_zaszlok input#btnLang_4{padding-left:3px;}
+
+.login_inputbox {
+	border: #525659 1px solid;
+    font-size : 12px;
+	margin: 0px;
+	background-color: transparent;
+	color: #000000;
+	line-height: 16px;
+	font-family:Verdana; 
+}
+
+
+
+.login_button_td
+{
+    padding-left: 1px;
+    vertical-align: top;
+    padding-top: 8px; 
+    text-align: right;
+    /*width: 166px;*/
+}    
+
+.login_content_docs
+{
+    vertical-align: top;
+    text-align: left;    
+    width:28%;/*34*/
+    height: 25px;	
+	padding-top: 5px;
+	text-align:left;
+	font-size:18px;
+	color:#616566;
+	font-family:Verdana;
+}  
+
+.login_content_links
+{
+    vertical-align: top;
+    text-align: left;
+    /*width:20%;26*/
+    width:26%;
+    height: 25px;
+	padding-top: 5px;
+	text-align:left;
+	font-size:18px;
+	color:#616566;
+	font-family:Verdana;	
+}    
+
+.login_content_news
+{
+    vertical-align: top;
+    text-align: left;
+    width:46%;
+    height: 25px;
+	padding-top: 5px;
+	text-align:left;
+	font-size:18px;
+	color:#616566;
+	font-family:Verdana; 
+}
+
+.login_content_separator_div
+{     
+    margin-left:4px;
+    margin-right:4px;
+}
+
+.login_content_separator 
+{
+    background-image:url(../Login_Images/login_content_separator.jpg);
+    background-repeat:repeat-y;
+    background-position: 2px 0px;    
+    padding-right:10px;    
+}
+
+.login_news_subject
+{
+    text-align: left;
+	color:#0c74b8;
+	font-family:Verdana; 
+	font-weight: bold;
+	font-size: 13px;
+	cursor: pointer;	
+	padding-top: 4px;
+	border-top: 1px solid #dadada;
+	padding-bottom: 15px;   
+}
+
+.login_news_subject a
+{
+    color:#0C74B8;
+}
+
+.login_news_date
+{
+    text-align: right;
+	color:#343434;
+	font-family:Verdana; 
+	font-size: 9px;
+	font-style:italic;
+	padding-top: 15px;
+	padding-bottom: 3px;
+	border-top: 1px solid #dadada;
+}
+
+
+.login_news_content
+{
+    text-align: left;
+	color:#565656;
+	font-family:Verdana; 
+	font-size: 12px;
+	/*width: 520px;*/
+	text-align:justify;
+}
+
+.login_news_content_full
+{
+    text-align: left;
+	color:#565656;
+	font-family:Verdana; 
+	font-size: 12px;
+	/*width: 520px;*/
+	text-align:justify;
+	margin:10px;
+}
+
+.login_news_more 
+{
+    text-align: right;
+    padding-bottom:4px;
+}
+
+.login_news_more a
+{
+    text-align: left;
+	color:#ffffff;
+	font-family:Verdana; 
+	font-size: 12px;
+	text-decoration:none;
+	cursor: pointer;
+	background-color:#9C9C9C;/*#4a4a4a;*/
+	padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+}
+
+.login_links 
+{
+    text-align: left;
+	border-top: 1px solid #dadada;
+	padding-top: 8px;
+	padding-bottom: 8px;	
+}
+
+.login_links a 
+{
+    text-align: left;
+	color:#0c74b8;
+	font-family:Verdana; 
+	font-size: 13px;
+	cursor: pointer;	
+	text-decoration:none;
+}
+
+.login_docs 
+{
+    text-align: left;
+	border-top: 1px solid #dadada;
+	padding-top: 8px;
+	padding-bottom: 1px;	
+}
+
+.login_docs a 
+{
+    text-align: left;
+	color:#4a4a4a;
+	font-family:Verdana; 
+	font-size: 13px;
+	cursor: pointer;	
+	text-decoration:none;
+}
+
+.login_docs_date
+{
+    text-align: right;
+	color:#343434;
+	font-family:Verdana; 
+	font-size: 9px;
+	font-style:italic;
+	padding-top:1px;
+	padding-bottom:5px;
+	/*border-top: 1px solid #dadada;*/
+}
+
+/*
+.login_news_underline
+{
+    height: 6px;
+    width: 100%;
+	border-bottom: 1px solid #dadada;
+}	
+*/
+
+/* eddig tart az új rész design */
+
+.main_login
+{
+	border-width:thin;
+	border-style:solid;
+	border-color:Gray;
+}
+.table_pictures
+{
+	padding:0px;
+	margin:0px;
+	border-collapse:collapse;
+	height:148px;
+}
+.login_bal_felso
+{
+	padding:0px;
+	margin:0px;
+	border-collapse:collapse;
+	height:94px;
+	vertical-align:bottom;
+}
+.login_bal_also
+{
+	padding:0px;
+	margin:0px;
+	border-collapse:collapse;
+	height:54px;
+}
+.login_jobb_felso
+{
+	padding:0px;
+	margin:0px;
+	border-collapse:collapse;
+	height:94px;
+	vertical-align:bottom;
+}
+.login_jobb_also
+{
+	padding:0px;
+	margin:0px;
+	border-collapse:collapse;
+	height:54px;
+}
+
+
+.baloldal
+{
+	width:300px;
+	border-left-width:1px;
+	border-left-style:solid;
+	border-left-color:#007dc5;
+
+}
+.jobboldal
+{
+	width:300px;
+	text-align:right;
+	padding-right:10px;
+	padding-bottom:5px;
+	border-right-width:1px;
+	border-right-style:solid;
+	border-right-color:#007dc5;
+	background-image:url('../Login_Images/right_bg.jpg');
+}
+.bottom
+{
+	font-family:Verdana;
+	font-size:10px;
+	color:White;
+	background-color:#a6a6a6;
+	border-right-width:0px;
+	border-right-style:solid;
+	border-right-color:#007dc5;
+	
+	border-left-width:0px;
+	border-left-style:solid;
+	border-left-color:#007dc5;
+	
+	border-bottom-width:0px;
+	border-bottom-style:solid;
+	border-bottom-color:#007dc5;
+	
+	border-top-width:1px;
+	border-top-style:solid;
+	border-top-color:#c8e3f4;
+	
+	background-image:url('../Login_Images/footer.jpg');
+}
+.bottom_left
+{
+	font-family:Verdana;
+	font-size:10px;
+	color:Black;
+	background-color:transparent;
+	text-align:left;
+	width:150px;
+	padding-left:10px;
+	height:18px;
+}
+.bottom_right
+{
+	font-family:Verdana;
+	font-size:10px;
+	color:Black;
+	background-color:transparent;
+	text-align:right;
+	padding-right:5px;
+	height:18px;
+}
+
+.top
+{
+}
+
+
+
+.szovegtype {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 18px;
+	COLOR: #493928;
+	FONT-FAMILY: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+}
+.szovegnote 
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 8.7px;
+	COLOR: Black;
+	FONT-FAMILY: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+}
+.szovegbrowser 
+{
+	COLOR: White;
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Tahoma, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.combo 
+{
+    BORDER-RIGHT: #493928 1px solid;
+    BORDER-TOP: #493928 1px solid;
+    FONT-SIZE: 12px;
+    MARGIN: 0px;
+    BORDER-LEFT: #493928 1px solid;
+    COLOR: #000000;
+    LINE-HEIGHT: 16px;
+    BORDER-BOTTOM: #493928 1px solid;
+    FONT-FAMILY: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    width: 200px;
+}
+
+/*modalhoz tartozo css-ek*/
+
+
+
+.progressimagediv
+{
+	background-color:Transparent;
+    filter:alpha(opacity=100);
+    opacity:1;
+    -moz-opacity:1;
+    border-color:Black;
+    border-width:thin;
+    border-style:solid;
+}
+
+
+
+/* azert nem kell, mert a modal nem szivja fel a css-bol ?!*/
+/*.DivPanel
+{
+	overflow-y:auto;
+	overflow-x:hidden;	
+	width:590px;
+	height:400px;
+}*/
+
+/*modal css-ek vege*/
+
+.lblStrong, .lblLetoltheto
+{
+	font-weight: bold;	
+}
+
+
+/***********************************************************************************************/
+
+.modal_fullscreen
+{
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+/*.modalBckgroundMain
+{
+	position:absolute;
+    height:100%;
+    width:100%;
+    top: 0px;
+    left: 0px;
+     background-color:#C0C0C0;
+    filter:alpha(opacity=90);
+    opacity:0.7;
+    -moz-opacity:0.7;
+}*/
+
+
+.progressimagediv
+{
+	background-color:Transparent;
+    filter:alpha(opacity=100);
+    opacity:1;
+    -moz-opacity:1;
+    border-color:Black;
+    border-width:thin;
+    border-style:solid;
+}
+
+.modalBackground 
+{
+    background-color:#C0C0C0;
+    filter:alpha(opacity=70);
+    opacity:0.7;
+    -moz-opacity:0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+
+
+/* azert nem kell, mert a modal nem szivja fel a css-bol ?!*/
+/*.DivPanel
+{
+	overflow-y:auto;
+	overflow-x:hidden;	
+	width:590px;
+	height:400px;
+}*/
+
+/*modal css-ek vege*/
+
+
+/* *************************************** intezmenyfuggo beallitasok ******************************************** */
+
+
+/* hallgatói felirat */
+
+.login_moduletype
+{
+    height:28px;
+	padding-left:15px;
+	text-align:left;
+	font-size:18px;
+	font-weight:bold;
+	color:#0c74b8;
+	font-family:Verdana;
+}
+
+/* default */
+.login_moduletype span[orgid="hallgato_default"]
+{
+	color:#0c74b8;
+}
+
+.login_moduletype span[orgid="oktato_default"]
+{
+	color:#0c74b8;
+}
+
+/* TE */
+.login_moduletype span[orgid="hallgato_te"]
+{
+	color:#0c74b8;
+}
+
+.login_moduletype span[orgid="oktato_te"]
+{
+	color:#0c74b8;
+}
+
+/* BME */
+.login_moduletype span[orgid="hallgato_bme"]
+{
+	color:#8c2532;
+}
+
+.login_moduletype span[orgid="oktato_bme"]
+{
+	color:#8c2532;
+}
+
+/* NYF */
+.login_moduletype span[orgid="hallgato_nyf"]
+{
+	color:#0c74b8;
+}
+
+.login_moduletype span[orgid="oktato_nyf"]
+{
+	color:#0c74b8;
+}
+
+/* NYME */
+.login_moduletype span[orgid="hallgato_nyme"]
+{
+	color:#be9e03;
+}
+
+.login_moduletype span[orgid="oktato_nyme"]
+{
+	color:#be9e03;
+}
+
+/* OE */
+.login_moduletype span[orgid="hallgato_oe"]
+{
+	color:#0c74b8;
+}
+
+.login_moduletype span[orgid="oktato_oe"]
+{
+	color:#0c74b8;
+}
+
+/* SZF */
+.login_moduletype span[orgid="hallgato_szf"]
+{
+	color:#0c74b8;
+}
+
+.login_moduletype span[orgid="oktato_szf"]
+{
+	color:#0c74b8;
+}
+
+/* ************************************************************************** */
+
+/* bejelentkezes button */
+
+.login_button
+{
+	FONT-SIZE: 12px;
+	background-color: transparent;	
+	FONT-FAMILY: Verdana;
+	font-weight:bold;
+	TEXT-DECORATION: none;
+	border: 0px;
+	width: 172px;
+	height: 22px;
+	cursor: hand;			
+}
+
+/* default */
+.login_button_td input[orgid="hallgato_default"]
+{
+    COLOR: White;
+    background-image: url(Default/Hallgato/login_button_172.png);
+}
+
+.login_button_td input[orgid="oktato_default"]
+{
+    COLOR: White;
+    background-image: url(Default/Oktato/login_button_172.png);
+}
+
+.login_button_td input[disabled]
+{
+    color: grey;
+}
+/* ************************************************************************** */
+
+/* intezmeny neve */
+
+.login_top_side span
+{	
+	color:White;
+	font-weight:bold;
+	font-size:14px;
+	font-style:italic;	
+	padding-left:30px;
+	font-family: Verdana, Arial, Helvetica;
+}
+
+/* default */
+.login_top_side span[orgid="hallgato_default"]
+{
+	color: White;
+}
+
+.login_top_side span[orgid="oktato_default"]
+{
+	color: White;
+}
+
+/* TE */
+.login_top_side span[orgid="hallgato_te"]
+{
+	/*color: Blue;*/
+}
+
+.login_top_side span[orgid="oktato_te"]
+{
+	color: White;
+}
+
+/* OE */
+.login_top_side span[orgid="hallgato_oe"]
+{
+	/*color: Blue;*/
+}
+
+.login_top_side span[orgid="oktato_oe"]
+{
+	color: White;
+}
+
+/* BME */
+.login_top_side span[orgid="hallgato_bme"]
+{
+	color: #8c2532;
+}
+
+.login_top_side span[orgid="oktato_bme"]
+{
+	color: #8c2532;
+}
+
+/* NYF */
+.login_top_side span[orgid="hallgato_nyf"]
+{
+	color: White;
+}
+
+.login_top_side span[orgid="oktato_nyf"]
+{
+	color: White;
+}
+
+/* NYME */
+.login_top_side span[orgid="hallgato_nyme"]
+{
+	color: #be9e03;
+}
+
+.login_top_side span[orgid="oktato_nyme"]
+{
+	color: #be9e03;
+}
+
+/* SZF */
+.login_top_side span[orgid="hallgato_szf"]
+{
+	color: White;
+}
+
+.login_top_side span[orgid="oktato_szf"]
+{
+	color: White;
+}
+
+/* ************************************************************************** */
+
+/* a fejlec hattere */
+
+.login_background_table
+{    
+    width: 100%;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;    
+    background-repeat: repeat-x;
+    /*background-color: gray;*/
+    border-collapse: collapse;
+	border: 0px;  
+	text-align: center;
+	background-color: White;    
+} 
+
+/* Default */
+.formcss table[orgid="hallgato_default"]
+{
+    background-image: url(Default/Hallgato/login_background.jpg);
+}
+
+.formcss table[orgid="oktato_default"]
+{
+    background-image: url(Default/Oktato/login_background.jpg);
+}
+
+/* ************************************************************************** */
+
+/* a jobboldali kep */
+
+.login_right_side
+{
+    width: 465px;
+    height:290px;    
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-collapse: collapse;  
+    margin: 0px;
+    padding: 0px;
+	border: 0px;
+}
+
+.login_right_side div
+{
+    background-repeat:no-repeat;
+}
+
+/* Default */
+.login_right_side div[orgid="hallgato_default"]
+{
+    background-image: url(Default/Hallgato/login_right_image.png);
+}
+
+.login_right_side div[orgid="oktato_default"]
+{
+    background-image: url(Default/Oktato/login_right_image.png);
+}
+
+/* ************************************************************************** */
+
+/* lablec */
+
+.login_footer
+{
+    height: 85px;    
+    background-repeat:repeat-x;  
+}
+
+/* Default */
+.tr_Footer td[orgid="hallgato_default"]
+{
+    background-image: url(Default/Hallgato/login_footer.png);
+}
+
+.tr_Footer td[orgid="oktato_default"]
+{
+    background-image: url(Default/Oktato/login_footer.png);
+}
+
+/* ************************************************************************** */
+
+/* button alatti kep */
+
+.login_left_image  
+{
+    width: 300px;
+    height:85px;    
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-collapse: collapse;  
+    margin: 0px;
+    padding: 0px;
+	border: 0px;	
+}
+
+/* Default */
+.tr_LeftImage td[orgid="hallgato_default"]
+{
+    background-image: url(Default/Hallgato/login_left_image.png);
+}
+
+.tr_LeftImage td[orgid="oktato_default"]
+{
+    background-image: url(Default/Oktato/login_left_image.png);
+}
+
+/* ************************************************************************** */
+
+/* Neptun logo-ja */
+
+.login_logo
+{
+    width:285px;
+    height:61px;    
+    background-position: 15px 0px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+	border: 0px;    
+}
+
+
+/* Default */
+.tr_Logo td[orgid="hallgato_default"]
+{
+    background-image: url(Default/Hallgato/login_logo.png);
+}
+
+.tr_Logo td[orgid="oktato_default"]
+{
+    background-image: url(Default/Oktato/login_logo.png);
+}
+
+/* validatorcallout hatterenek eltunese miatt */
+
+.ajax__validatorcallout_ DIV
+{
+	background-color: lemonchiffon;
+}
+
+.ajax__validatorcallout_ TD
+{
+	background-color: lemonchiffon;
+}
+
+.ajax__validatorcallout_login
+{
+    z-index:99 !important;
+}
+
+.ajax__validatorcallout_popup_table
+{
+	border-bottom: medium none;
+	border-left: medium none;
+	padding-bottom: 0px;
+	background-color: transparent;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-top: medium none;
+	border-right: medium none;
+	padding-top: 0px;
+}
+.ajax__validatorcallout_popup_table_row
+{
+	padding-bottom: 0px;
+	background-color: transparent;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 100%;
+	vertical-align: top;
+	padding-top: 0px;
+}
+.ajax__validatorcallout_callout_cell
+{
+	border-bottom: medium none;
+	text-align: right;
+	border-left: medium none;
+	padding-bottom: 0px;
+	background-color: transparent !important;
+	margin: 0px;
+	padding-left: 0px;
+	width: 20px;
+	padding-right: 0px;
+	height: 100%;
+	vertical-align: top;
+	border-top: medium none;
+	border-right: medium none;
+	padding-top: 0px;
+}
+.ajax__validatorcallout_callout_table
+{
+	border-bottom: medium none;
+	border-left: medium none;
+	padding-bottom: 0px;
+	background-color: transparent;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 100%;
+	border-top: medium none;
+	border-right: medium none;
+	padding-top: 0px;
+}
+.ajax__validatorcallout_callout_table_row
+{
+	padding-bottom: 0px;
+	background-color: transparent;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+.ajax__validatorcallout_callout_arrow_cell
+{
+	border-bottom: medium none;
+	text-align: right;
+	border-left: medium none;
+	padding-bottom: 0px;
+	background-color: transparent !important;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 1px;
+	vertical-align: top;
+	border-top: medium none;
+	border-right: medium none;
+	padding-top: 8px;
+}
+.ajax__validatorcallout_callout_arrow_cell .ajax__validatorcallout_innerdiv
+{
+	border-bottom: medium none;
+	position: relative;
+	border-left: medium none;
+	padding-bottom: 0px;
+	background-color: transparent !important;
+	margin: 0px;
+	padding-left: 0px;
+	width: 15px;
+	padding-right: 0px;
+	font-size: 1px;
+	border-right: medium none;
+	padding-top: 0px;
+	left: 1px;
+	border-top:1px solid black;
+}
+
+.ajax__validatorcallout_callout_arrow_cell .ajax__validatorcallout_innerdiv DIV
+{
+	border-bottom: medium none;
+	padding-bottom: 0px;
+	margin: 0px 0px 0px auto;
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 1px;
+	overflow: hidden;
+	border-top: medium none;
+	border-right: medium none;
+	padding-top: 0px;
+	
+	border-left: black 1px solid;
+}
+
+.ajax__validatorcallout_error_message_cell
+{
+	border-left: medium none;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	width: 100%;
+	padding-right: 5px;
+	font-family: Verdana;
+	font-size: 10px;
+	border-right: medium none;	
+	padding-top: 5px;
+	
+	border-top: black 1px solid;
+	border-bottom: black 1px solid;
+}
+.ajax__validatorcallout_icon_cell
+{
+	padding-bottom: 5px;
+	margin: 0px;
+	padding-left: 5px;
+	width: 20px;
+	padding-right: 5px;
+	border-right: medium none;
+	padding-top: 5px;
+	
+	border-top: black 1px solid;
+	border-bottom: black 1px solid;
+	border-left: black 1px solid;
+}
+.ajax__validatorcallout_close_button_cell
+{
+	text-align: right;
+	border-left: medium none;
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	vertical-align: top;
+	padding-top: 0px;
+	
+	border-top: black 1px solid;
+	border-bottom: black 1px solid;
+	border-right: black 1px solid;
+}
+.ajax__validatorcallout_close_button_cell .ajax__validatorcallout_innerdiv
+{
+	border-bottom: medium none;
+	text-align: center;
+	border-left: medium none;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	width: 10px;
+	padding-right: 2px;
+	border-top: medium none;
+	cursor: pointer;
+	border-right: medium none;
+	padding-top: 2px;
+	
+	border-left: black 1px solid;
+}
+
+.ajax__validatorcallout_callout_arrow_cell__left .ajax__validatorcallout_innerdiv__left
+{
+	left: -1px;	
+	
+	border-top: black 1px solid;
+}
+.ajax__validatorcallout_callout_arrow_cell__left .ajax__validatorcallout_innerdiv__left DIV
+{
+	border-bottom: medium none;
+	border-left: medium none;	
+	padding-bottom: 0px;
+	margin: 0px auto 0px 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 1px;
+	overflow: hidden;
+	border-top: medium none;
+	padding-top: 0px;
+		
+	border-right: black 1px solid;
+}
+
+.valtasszerkesztesre
+{
+    position: fixed;
+    top : 0px;
+    right: 0px;
+    padding: 10px;
+}
+
+/* END */

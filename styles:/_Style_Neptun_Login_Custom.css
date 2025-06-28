@@ -1,0 +1,50 @@
+﻿/* Oldal háttérszíne */
+body[orgid="hallgato_oe"] {
+    background-color: #bdbdbd;
+}
+
+/* Alap témában a színátmenet az oldal tetején */
+.formcss table[orgid="hallgato_custom"] {
+    background-image: url(login_background.jpg);
+}
+
+/* Bejelentkezési gomb háttere és a felirat színe */
+.login_button_td input[orgid="hallgato_custom"] {
+    color: white;
+    background-image: url(login_button_172.png);
+}
+
+/* Alap témában a színátmenet az oldal alján*/
+.tr_Footer td[orgid="hallgato_custom"] {
+    background-image: url(login_footer.png);
+}
+
+/* Bejelentkezési gomb alatti rész */
+.tr_LeftImage td[orgid="hallgato_custom"] {
+    background-image: url(login_left_image.png);
+}
+
+/* Nagy kép */
+.login_right_side div[orgid="hallgato_custom"] {
+    background-image: url(login_right_image.png);
+}
+
+/* Neptun logó */
+.tr_Logo td[orgid="hallgato_custom"] {
+    background-image: url(login_logo.png);
+}
+
+/* Web típus feliratának (hallgatói, oktatói) színe */
+.login_moduletype span[orgid="hallgato_custom"] {
+    color: #0c74b8;
+}
+
+/* Intézmény nevének színe */
+.login_top_side span[orgid="hallgato_custom"] {
+    color: white;
+}
+
+/* Friss hírek fejlécének színe */
+.login_news_subject label + a {
+    color: #0c74b8;
+}
